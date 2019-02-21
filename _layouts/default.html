@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>{{ page.title | strip_html }}</title>
+    {% capture styles %}{% include assets/css/app.css %}{% endcapture %}
+    <style>{{ styles | scssify }}</style>
+    {% include assets/page-css.html %}
+  </head>
+  <body>
+    {{ content }}
+  <script>{% include assets/js/app.js %}</script>
+  {% include assets/page-js.html %}
+  {% include analytics.html %}
+  </body>
+</html>

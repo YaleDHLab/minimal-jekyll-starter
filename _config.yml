@@ -1,0 +1,19 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# minify all inlined css
+sass:
+  style: compressed
+
+# minify all html; set to false during development
+minify_html: true
+
+# plugin required to minify html
+plugins:
+  - octopress-minify-html
+
+# specify which collections we'll render and their route structure
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title.html

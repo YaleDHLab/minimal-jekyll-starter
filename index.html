@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class='container'>
+  <code>
+    <p>All posts:</p>
+    {% for post in site.posts %}
+      <a href='{{ post.url }}'>
+        <h2>{{ post.title }}</h2>
+      </a>
+    {% endfor %}
+  </code>
+</div>

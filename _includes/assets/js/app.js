@@ -1,0 +1,1 @@
+{% include assets/js/404.js %}
